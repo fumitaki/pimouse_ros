@@ -1,6 +1,6 @@
 #!/bin/bash -xve
 
-sudo apt install pip
+ apt install pip
 #required packages
 pip install catkin_pkg
 pip install empy
