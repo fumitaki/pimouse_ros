@@ -5,7 +5,7 @@ language:
 cache:
   - apt
 install:
- - pip install --upgrade pip
+ - apt-get install pip
 
 script:
   - bash -xve ./test/travis_ros_install.bash
