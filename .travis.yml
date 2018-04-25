@@ -1,5 +1,10 @@
 sudo: required
 dist: trusty
+language:
+  - generic
+cache:
+  -apt
+
 
 script:
   - bash -xve ./test/travis_ros_install.bash
