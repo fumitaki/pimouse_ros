@@ -4,7 +4,7 @@
 #pip install catkin_pkg
 #pip install empy
 pip install pyyaml
-#pip install rospkg
+apt-get  install rospkg
 
 #ros install
 cd ..
