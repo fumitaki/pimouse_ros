@@ -3,7 +3,7 @@ dist: trusty
 language:
   - generic
 cache:
-  -apt
+  - apt
 install:
  - pip install --upgrade pip
 
