@@ -4,7 +4,8 @@ language:
   - generic
 cache:
   -apt
-
+install:
+ - pip install --upgrade pip
 
 script:
   - bash -xve ./test/travis_ros_install.bash
