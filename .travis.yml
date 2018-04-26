@@ -1,14 +1,10 @@
 sudo: required
 dist: trusty
-language: python
-python:
-  - "2.7"
-install:
-  - pip install -r requirements.txt
 
-before_script:
-  - pip install -U pip
-  - pip-compile --dry-run requirements.in | diff -u requirements.txt -
+before_install:
+  - easy_install --version
+  - pip freeze
+  - travis_retry pip install -U setuptools
 
 script:
   - bash -xve ./test/travis_ros_install.bash
